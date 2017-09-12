@@ -15,7 +15,11 @@ namespace fizzbuzz
 
             for (var i = 0; i < N; i++)
             {
-                if ((i % 3 == 0) && (i % 5 == 0))
+                if(i == 0)
+                {
+                    System.Console.WriteLine(i + "\n");
+                }
+                else if ((i % 3 == 0) && (i % 5 == 0))
                 {
                     System.Console.WriteLine("FizzBuzz\n");
                 }
@@ -30,6 +34,8 @@ namespace fizzbuzz
                 else
             System.Console.WriteLine(i + "\n");
             }
+
+            Console.ReadLine();
 
         }
     }
